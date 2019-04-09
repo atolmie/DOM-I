@@ -61,3 +61,27 @@ button.textContent = siteContent.cta.button;
 console.log(button)
 
 const ctaImg = document.getElementById("cta-img"); ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+const midImg = document.getElementById("middle-img");
+midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+//const h4 = document.getElementsByClassName('text-content')[0].children[1];
+//h4.textContent = siteContent.text-content.h4;
+//console.log(h4)
+
+const contact = document.querySelector('.contact h4');
+contact.textContent = siteContent.contact['contact-h4']
+console.log(contact)
+
+const contactInfo = document.querySelectorAll('.contact p');
+contactInfo[0].textContent = siteContent.contact.address;
+contactInfo[1].textContent = siteContent.contact.phone;
+contactInfo[2].textContent = siteContent.contact.email;
+console.log(contactInfo)
+
+
+
+
+const footer = document.querySelector('footer p');
+footer.textContent = siteContent.footer.copyright;
+console.log(footer)
